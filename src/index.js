@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Layout from './Components/Layout';
+import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import Createquiz from './Components/Createquiz';
+import Home from './Components/Home';
+// import App from './App';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <Layout/>
+    
+    
+    
+    
   </React.StrictMode>
 );
 

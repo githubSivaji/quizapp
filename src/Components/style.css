@@ -1,0 +1,57 @@
+
+.Main_container {
+    background-color: #A9AEE5;
+    position: relative;
+   
+}
+
+.container_inside {
+    
+    border-radius: 30px; /* Added z-index to ensure it is above the Main_container */
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    margin-right: 50px;
+}
+
+.navbar {
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    gap: 30px;
+    border-bottom: solid rgb(40, 38, 38) 1px;
+}
+
+
+
+.home{
+    gap: 150px;
+    width: 85%;
+}
+.home-left{
+    padding: 100px 10px;
+    margin-left: 100px;
+    color:#525568;
+}
+.main-image{
+   width: 100%;
+   height: 500px;
+    object-fit: cover;
+
+}
+.get-started-btn{
+    margin-left: 85px;
+    border: 1px solid #525568;
+    color: #525568;;
+    margin-top: 15px;
+    /* background-color: white; */
+}
+h1{
+    font-weight:bolder;
+}
+.p-text{
+    width: 70%;
+    margin-left: 15px;
+}
