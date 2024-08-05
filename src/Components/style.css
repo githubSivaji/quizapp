@@ -30,6 +30,7 @@ img {
     gap: 150px;
     width: 85%;
 }
+
 .home-left{
     padding: 100px 10px;
     margin-left: 100px;
@@ -48,6 +49,9 @@ img {
     margin-top: 15px;
     /* background-color: white; */
 }
+
+
+
 h1{
     font-weight:bolder;
 }
@@ -66,4 +70,13 @@ border-radius: 10px;
 {
     gap: 10%;
     justify-items: auto;
+}
+.content
+{
+    overflow: auto;
+    height: 600px;
+}
+*{
+    margin: 0;
+    padding: 0;
 }

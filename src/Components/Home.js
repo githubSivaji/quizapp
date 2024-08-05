@@ -1,7 +1,12 @@
 import React from 'react'
 import "./style.css"
 import image from "../assets/homeimage.jpg"
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate=useNavigate()
+  const navigathepage=()=>{
+    navigate('/quizlist')
+  }
   return (
     
     // <div className='container home d-flex '>
@@ -25,9 +30,12 @@ const Home = () => {
                     <h1>Welcome to Quiz</h1>
               <p className='p-text text-center'>Quiz is a powerful quizzing  platform developed by MultiCode group.</p>
             </div>
-              <button className="btn get-started-btn shadow-lg p-2 bg-white rounded">Get Started</button>
+          <button
+            className="btn get-started-btn shadow-lg p-2 bg-white rounded" 
+            onClick={navigathepage}>Get Started</button>
       
           </div>
+        
         <div className='home-right'>
             <img src={image} alt="Welcome" className='main-image'/>
         </div>

@@ -1,0 +1,56 @@
+.main
+{
+    height: 550px;
+    
+}
+.next
+{
+    gap: 30%;
+    
+}
+.option
+{
+    box-shadow: rgba(151, 148, 148, 0.35) 0px 5px 15px;
+    height: 30px;
+    margin: 20px;
+    width: 70%;
+}
+.option:hover{
+    background-color: #A9AEE5;
+}
+.nav1
+{
+    height: auto;
+    text-align: center;
+}
+.nav1 button
+{
+    background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  }
+  .nav1 button:hover
+{
+    background-color: #A9AEE5;
+    
+  }
+
+
+  .navigate-btns{
+    border:solid rgb(175, 174, 174) 0.5px;
+    outline: none;
+    border-radius: 10px; 
+    padding: 5px;
+    width: 35px;
+    box-shadow: 0 2px 4px rgba(221, 42, 42, 0.1)
+  }
+
+  .score-box{
+    background-color: #d9d9d9;
+    /* padding: 0 20px; */
+    width: 15%;
+  }
+  

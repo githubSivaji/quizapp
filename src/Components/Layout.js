@@ -7,11 +7,12 @@ import QuizList from './QuizList';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Quizopen from './Quizopen';
 import { QuizProvider } from './QuizContext';
+import Footer from './Footer';
 
 const Layout = () => {
     return (
         <QuizProvider>
-            <div className='container-fluid border Main_container p-5 vh-100'>
+            <div className='container-fluid border Main_container p-5 min-vh-100 vh-auto'>
                 <div className='bg-light container_inside'>
                     <BrowserRouter>
                         <NavBar/>
@@ -24,6 +25,7 @@ const Layout = () => {
                     </BrowserRouter>
                 </div>     
             </div>
+            <Footer/>
         </QuizProvider>
     );
 }
