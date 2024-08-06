@@ -6,7 +6,7 @@ import './Quiz.css'
 const Quizopen = () => {
     const { quizId } = useParams();
     const navigate = useNavigate();
-    const {quizzes,addQuiz}=useContext(QuizContext);
+    const {quizzes}=useContext(QuizContext);
     const quiz = quizzes.find(q => q.id === quizId);
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
