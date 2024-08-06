@@ -7,7 +7,7 @@ import QuizList from './QuizList';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Quizopen from './Quizopen';
 import { QuizProvider } from './QuizContext';
-// import Footer from './Footer';
+ import Footer from './Footer';
 
 const Layout = () => {
     return (
@@ -25,7 +25,7 @@ const Layout = () => {
                     </BrowserRouter>
                 </div>     
             </div>
-            {/* <Footer/> */}
+             <Footer/> 
         </QuizProvider>
     );
 }
