@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { QuizContext } from './QuizContext';
 import './Quiz.css';
@@ -15,7 +15,7 @@ const Quizopen = () => {
     const [timeLeft, setTimeLeft] = useState(quiz ? quiz.duration * 60 : 0); // Duration in seconds
     const [quizSubmitted, setQuizSubmitted] = useState(false);
 
-    const calculateScore = () => {
+    const calculateScore = useCallback(() => {
         let newScore = 0;
         quiz.questions.forEach((question, index) => {
             if (selectedAnswers[index] === question.answer) {
@@ -23,7 +23,7 @@ const Quizopen = () => {
             }
         });
         setScore(newScore);
-    };
+    }, [quiz.questions, selectedAnswers]);
 
     useEffect(() => {
         if (timeLeft > 0) {
@@ -75,9 +75,9 @@ const Quizopen = () => {
 
     if (timeLeft === 0 || quizSubmitted) {
         return (
-            <div className='container p-5 text-center' style={{height: "90vh"}}>
+            <div className='container p-5 text-center' style={{ height: "90vh" }}>
                 <h1>Quiz Results</h1>
-                <div className='text-success' style={{fontSize: "100px"}}><i className="fa-solid fa-circle-check"></i></div>
+                <div className='text-success' style={{ fontSize: "100px" }}><i className="fa-solid fa-circle-check"></i></div>
                 <div className='container d-flex justify-content-center gap-5 '>
                     <div className='score-box p-2'>
                         <p>YOUR SCORE</p>
