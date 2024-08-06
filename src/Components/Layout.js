@@ -25,7 +25,7 @@ const Layout = () => {
                     </BrowserRouter>
                 </div>     
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </QuizProvider>
     );
 }

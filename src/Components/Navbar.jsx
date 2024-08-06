@@ -18,7 +18,7 @@ const NavBar = () => {
             </Link>
             <Link to='/quizlist'>Quizzes</Link>
               <Link to='/CreateQuiz'> Create Quizzes</Link>
-              <a href="#footer">Contact</a>
+              {/* <a href="#footer">Contact</a> */}
           </div>
 
           <div className={enablemenu ? "nav-links nav-links-mobile " : "d-none"}>
