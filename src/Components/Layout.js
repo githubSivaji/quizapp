@@ -12,7 +12,7 @@ import Footer from './Footer';
 const Layout = () => {
     return (
         <QuizProvider>
-            <div className='container-fluid border Main_container p-5 min-vh-100 vh-auto'>
+            <div className='container-fluid p-5 border min-vh-100 w-100 vh-auto Main_container'>
                 <div className='bg-light container_inside'>
                     <BrowserRouter>
                         <NavBar/>
@@ -31,4 +31,3 @@ const Layout = () => {
 }
 
 export default Layout;
-

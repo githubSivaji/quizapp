@@ -22,6 +22,12 @@ const NavBar = () => {
           </div>
 
           <div className={enablemenu ? "nav-links nav-links-mobile " : "d-none"}>
+
+              <div className="btn btn-default text-danger mx-2 d-flex justify-content-start"
+                onClick={()=>setenablemenu(false)}
+                style={{fontSize: "25px"}}>
+              <i class="fa-solid fa-xmark"></i>
+              </div>
             <Link to ='/' onClick={()=>setenablemenu(false)}>
             <i class="fa-solid fa-house" to='/'> </i> &nbsp;Home
             </Link>

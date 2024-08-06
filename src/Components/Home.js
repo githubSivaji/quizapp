@@ -24,7 +24,7 @@ const Home = () => {
     //       <div className='home_text'>
     //         <img src="" alt="not"/>
     //         </div>
-      <div className="home d-flex g-0 p-5">
+      <div className="home d-flex">
           <div className='home-left'>
             <div className='home_text'>
                     <h1>Welcome to Quiz</h1>

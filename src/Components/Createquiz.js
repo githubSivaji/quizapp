@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Createquiz = () => {
-    const { addQuiz } = useContext(QuizContext);
+    const { addQuiz , quizzes} = useContext(QuizContext);
+    
     const navigate = useNavigate();
 
     const [title, setTitle] = useState('');

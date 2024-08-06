@@ -88,7 +88,7 @@ const Quizopen = () => {
                         </div>
                     </div>
                     <div className='score-box p-2'>
-                        <p>correct questions : {score} </p>
+                        <p>correct Questions : <h1>{score}</h1> </p>
                         <p>Incorrect Questions: {quiz.questions.length-score} </p>
 
                     </div>

@@ -2,11 +2,11 @@
 .Main_container {
     background-color: #A9AEE5;
     position: relative;
+    padding:  5% 20%;
    
 }
 
 .container_inside {
-    
     border-radius: 30px; /* Added z-index to ensure it is above the Main_container */
 }
 
@@ -29,6 +29,7 @@ img {
 .home{
     gap: 150px;
     width: 85%;
+    padding: 2rem;
 }
 
 .home-left{
