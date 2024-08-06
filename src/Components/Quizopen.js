@@ -78,16 +78,18 @@ const Quizopen = () => {
             <div className='container p-5 text-center' style={{ height: "90vh" }}>
                 <h1>Quiz Results</h1>
                 <div className='text-success' style={{ fontSize: "100px" }}><i className="fa-solid fa-circle-check"></i></div>
-                <div className='container d-flex justify-content-center gap-5 '>
-                    <div className='score-box p-2'>
-                        <p>YOUR SCORE</p>
-                        <div style={{ fontSize: "50px" }} className='text-success'>
-                            {score}
+                <div className='container score-container d-flex justify-content-center gap-5'>
+                    <div className='d-flex gap-4 flex-wrap'>
+                        <div className='score-box'>
+                            <p>YOUR SCORE</p>
+                            <div style={{ fontSize: "50px" }} className='text-success'>
+                                {score}
+                            </div>
                         </div>
-                    </div>
-                    <div className='score-box p-2'>
-                        <p>Correct Questions: <h1>{score}</h1></p>
-                        <p>Incorrect Questions: {quiz.questions.length - score}</p>
+                        <div className='score-box'>
+                            <p>Correct Questions: {score}</p>
+                            <p>Incorrect Questions: {quiz.questions.length - score}</p>
+                        </div>
                     </div>
                 </div>
                 <div className='btn btn-primary mt-5' onClick={() => navigate('/')}>Back to Home</div>
@@ -103,7 +105,6 @@ const Quizopen = () => {
                     <h6>Time left: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}</h6>
                     <button className='btn btn-danger' onClick={handleFinishTest}>Finish Test</button>
                 </div>
-
                 <div className='text-center mt-3 overflow-auto'>
                     {quiz.questions.map((_, index) => (
                         <button
