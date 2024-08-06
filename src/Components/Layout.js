@@ -17,7 +17,7 @@ const Layout = () => {
                     <BrowserRouter>
                         <NavBar/>
                         <Routes>
-                            <Route path='/' element={<Home />} />
+                            <Route path='/quizapp' element={<Home />} />
                             <Route path='/CreateQuiz' element={<Createquiz />} />
                             <Route path='/quizlist' element={<QuizList />} />
                             <Route path='/quiz/:quizId' element={<Quizopen />} />
