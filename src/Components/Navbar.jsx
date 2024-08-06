@@ -28,8 +28,8 @@ const NavBar = () => {
                 style={{fontSize: "25px"}}>
               <i class="fa-solid fa-xmark"></i>
               </div>
-            <Link to ='/' onClick={()=>setenablemenu(false)}>
-            <i class="fa-solid fa-house" to='/quizapp'> </i> &nbsp;Home
+            <Link to ='/quizapp' onClick={()=>setenablemenu(false)}>
+            <i class="fa-solid fa-house" to='/'> </i> &nbsp;Home
             </Link>
             <Link to='/quizlist' onClick={()=>setenablemenu(false)}>Quizzes</Link>
               <Link to='/CreateQuiz' onClick={()=>setenablemenu(false)}> Create Quizzes</Link>
