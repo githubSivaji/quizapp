@@ -4,12 +4,12 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from './Components/Layout';
-import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Createquiz from './Components/Createquiz';
-import Home from './Components/Home';
-// import App from './App';
-import QuizList from "../src/Components/QuizList"
+// import 'bootstrap/dist/css/bootstrap.css';
+// import { BrowserRouter, Route, Routes} from 'react-router-dom';
+// import Createquiz from './Components/Createquiz';
+// import Home from './Components/Home';
+// // import App from './App';
+// import QuizList from "../src/Components/QuizList"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
